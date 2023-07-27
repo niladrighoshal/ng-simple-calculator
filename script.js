@@ -47,6 +47,7 @@ buttons.forEach(button => {
     if (key === 'DEL') {
       // For DEL button, delete the last character
       string = string.substring(0, string.length - 1);
+      expression = string;
       input.value = string;
     } else if (key === 'AC') {
       // For AC button, clear the expression and result
