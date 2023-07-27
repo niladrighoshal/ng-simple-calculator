@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, 
+    #000000, #26527c);
+}
+
+/* .calculator{
+    border: 1px solid #212223;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+} */
+input{
+    width: 100%; 
+    border:none ;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    /* box-shadow: 0px 3px 10px rgba(170, 159, 159, 0.2); */
+    font-size: 30px;
+    text-align: right;
+    color: #ffffff;
+
+}
+.boxes{
+    width: 330px;
+    border: none;
+    background: transparent;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 10px rgba(170, 159, 159, 0.2);
+    border-radius: 10px;
+}
+.outerbox{
+    border: none;
+    background: transparent;
+    margin-bottom: 20px;
+    padding: 100px;
+}
+input::placeholder{
+    color: #ffffff;
+}
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: rgb(97, 101, 135);
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 10px rgba(255, 255,255, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:active{
+    transform: scale(0.80) translate(-5px, -5px);
+    box-shadow: -8px -8px 10px rgba(255, 255, 255, 0);
+}
+.eqlBtn{
+    background-color: #fb7c14;
+}
+.operator{
+    color: #000000;
+}
+.footer {
+    color: rgba(0, 208, 255, 0.814);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 0px 25px rgba(22, 6, 237, 0.852);
+    font-size: 24px; /* Adjust font size as needed */
+  }
+  
+  .animate-text-gradient {
+    background-image: linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 3s infinite linear;
+    animation: hue 3s infinite linear;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  @-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+  
+  @keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+  
+
+
+  .profile_img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border-radius: 50%;
+    background: url('./me.png') no-repeat center center; /* Set the background image */
+    background-size: contain; /* Make the image fit inside the button without stretching */
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    box-shadow: -0px 0px 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Optional: Add some margin between the button and the text */
+  .footer h2 {
+    margin-left: 10px;
+  }
+
+
+
+
+
+/* .calculator {
+    position: relative;
+    border: 1px solid #212223;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.display {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* input[type="text"] {
+    width: 100%;
+    border: none;
+    padding: 24px;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+    color: #ffffff;
+    outline: none;
+} */
+
+/* Your existing CSS rules */
+
+.calculator {
+    position: relative;
+    border: none;
+    padding: 20px;
+    border-radius: 16px;
+    background: #d7e7f5;
+    box-shadow: -6px 6px 15px rgba(237, 237, 237, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align children to the right */
+}
+
+/* Create a new div for the input section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align input elements to the right */
+    width: 100%;
+    /* margin-bottom: 10px; */
+    
+    background-color: black;
+    border: 5px solid #4a5968;
+    border-radius: 5px;
+}
+
+/* Style the input box */
+input[type="text"] {
+    border: none;
+    /* padding: 2px; */
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 0px;
+    background: transparent;
+    font-size: 20px;
+    text-align: right;
+    color: #ffffff;
+    outline: none;
+    width: 100%;
+}
+
+/* Create a new div for the output section */
+.output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align output elements to the right */
+    width: 100%;
+}
+
+/* Style the output box */
+#outputBox {
+    border: none;
+    padding-top: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+    color: #ffffff;
+    outline: none;
+}
+.source_code {
+  text-align: left;
+}
+
+.source_code h5{
+  
+  color: #2e19cc;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.source_code h5:hover {
+  text-decoration: underline;
+}
+
+/* #particles-js{
+  height: 10%;
+  background: #2e19cc;
+} */
