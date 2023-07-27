@@ -99,7 +99,7 @@ function handleButtonPress(key) {
     expression += '/';
     input.value = string;
   } else if (key === '%') {
-    expression = ((evaluateExpression(expression) / 100).toString()) * 10000;
+    expression = ((evaluateExpression(expression) / 100).toString()) ;
     input.value = expression;
     output.value = expression;
   } else {
