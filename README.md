@@ -2,6 +2,8 @@
 
 This is a simple calculator web application created by Niladri Ghoshal.
 
+This can only perform basic arithmetic operations.
+
 ## Features
 
 - Basic arithmetic operations: addition, subtraction, multiplication, and division.
