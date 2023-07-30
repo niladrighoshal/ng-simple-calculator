@@ -26,4 +26,4 @@ This can only perform basic arithmetic operations.
 
 ## License
 
-This project is open-source and available under the [MIT License](link-to-license).
+This project is open-source.
